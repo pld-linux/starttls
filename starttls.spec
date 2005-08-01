@@ -24,6 +24,7 @@ starttls - simple wrapper program for STARTTLS
 %package emacs
 Summary:	Lisp utility functions for STARTTLS profiles
 Group:		Applications/Editors/Emacs
+Requires:	%{name} = %{version}
 Requires:	emacs
 
 %description emacs
@@ -32,6 +33,7 @@ Lisp module that defines some utility functions for STARTTLS profiles.
 %package xemacs
 Summary:	Lisp utility functions for STARTTLS profiles
 Group:		Applications/Editors/Emacs
+Requires:	%{name} = %{version}
 Requires:	xemacs
 
 %description xemacs
