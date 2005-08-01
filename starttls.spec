@@ -4,10 +4,9 @@
 %bcond_without	xemacs		# Build without XEmacs support
 #
 Summary:	A simple wrapper program for STARTTLS
-Summary(pl):	-
 Name:		starttls
 Version:	0.10
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications
 Source0:	ftp://ftp.opaopa.org/pub/elisp/%{name}-%{version}.tar.gz
@@ -20,20 +19,23 @@ BuildRequires:  emacs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+starttls - simple wrapper program for STARTTLS
 
 %package emacs
-Summary:	ENIRC IRC Client
+Summary:	Lisp utility functions for STARTTLS profiles
 Group:		Applications/Editors/Emacs
 Requires:	emacs
 
 %description emacs
+Lisp module that defines some utility functions for STARTTLS profiles.
 
 %package xemacs
-Summary:	ZENIRC IRC Client
+Summary:	Lisp utility functions for STARTTLS profiles
 Group:		Applications/Editors/Emacs
 Requires:	xemacs
 
 %description xemacs
+Lisp module that defines some utility functions for STARTTLS profiles.
 
 %prep
 %setup -q
