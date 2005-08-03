@@ -4,6 +4,7 @@
 %bcond_without	xemacs		# Build without XEmacs support
 #
 Summary:	A simple wrapper program for STARTTLS
+Summary(pl):	Prosty program obudowuj±cy dla STARTTLS
 Name:		starttls
 Version:	0.10
 Release:	1
@@ -19,25 +20,36 @@ BuildRequires:  emacs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-starttls - simple wrapper program for STARTTLS
+starttls - simple wrapper program for STARTTLS.
+
+%description -l pl
+starttls - prosty program obudowuj±cy dla STARTTLS.
 
 %package emacs
 Summary:	Lisp utility functions for STARTTLS profiles
+Summary(pl):	Funkcje narzêdziowe Lispa dla profili STARTTLS
 Group:		Applications/Editors/Emacs
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	emacs
 
 %description emacs
 Lisp module that defines some utility functions for STARTTLS profiles.
 
+%description emacs -l pl
+Modu³ Lispa definiuj±cy funkcje narzêdziowe dla profili STARTTLS.
+
 %package xemacs
 Summary:	Lisp utility functions for STARTTLS profiles
+Summary(pl):	Funkcje narzêdziowe Lispa dla profili STARTTLS
 Group:		Applications/Editors/Emacs
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	xemacs
 
 %description xemacs
 Lisp module that defines some utility functions for STARTTLS profiles.
+
+%description xemacs -l pl
+Modu³ Lispa definiuj±cy funkcje narzêdziowe dla profili STARTTLS.
 
 %prep
 %setup -q
