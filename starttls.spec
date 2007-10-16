@@ -7,7 +7,7 @@ Summary:	A simple wrapper program for STARTTLS
 Summary(pl.UTF-8):	Prosty program obudowujący dla STARTTLS
 Name:		starttls
 Version:	0.10
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	ftp://ftp.opaopa.org/pub/elisp/%{name}-%{version}.tar.gz
